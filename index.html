@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>キャリア戦略ワークシート Step 1: アセットの再定義</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            -webkit-print-color-adjust: exact; /* Ensures colors print correctly in Chrome/Safari */
+            color-adjust: exact; /* Standard */
+        }
+        /* A4 Landscape Dimensions: 297mm x 210mm */
+        @media print {
+            @page {
+                size: A4 landscape;
+                margin: 15mm;
+            }
+            body {
+                width: 297mm;
+                height: 210mm;
+                margin: 0;
+                padding: 0;
+            }
+            .no-print {
+                display: none;
+            }
+            .worksheet-container {
+                box-shadow: none !important;
+                border: none !important;
+            }
+        }
+        .worksheet-container {
+             width: 29.7cm;
+             height: 21cm;
+             box-sizing: border-box;
+        }
+        textarea {
+            background-color: #f8fafc; /* bg-slate-50 */
+            border: 1px solid #e2e8f0; /* border-slate-200 */
+            resize: none;
+        }
+        textarea:focus {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center p-4 sm:p-8">
+
+    <div class="worksheet-container bg-white p-8 rounded-lg shadow-xl border border-gray-200 flex flex-col">
+        <!-- Header -->
+        <header class="flex justify-between items-start border-b pb-4">
+            <div>
+                <h1 class="text-2xl font-bold text-gray-800">STEP 1: アセットの再定義（自己分析）</h1>
+                <p class="text-sm text-gray-600 mt-1">目的: 競技実績を生み出した「プロセス」と、それを支えた「価値観」を言語化する。</p>
+            </div>
+            <div class="text-right space-y-1">
+                <div class="flex items-center justify-end">
+                    <label for="name" class="text-sm text-gray-500 shrink-0">氏名:</label>
+                    <input id="name" type="text" class="text-sm p-1 border-b-2 bg-slate-50 border-gray-200 focus:border-blue-500 focus:outline-none w-48 ml-2">
+                </div>
+                <div class="flex items-center justify-end">
+                    <label class="text-sm text-gray-500 shrink-0">記入日:</label>
+                    <input id="year" type="text" class="text-sm p-1 border-b-2 bg-slate-50 border-gray-200 focus:border-blue-500 focus:outline-none w-16 text-center ml-2" placeholder="YYYY"> <span class="text-sm text-gray-500">年</span>
+                    <input id="month" type="text" class="text-sm p-1 border-b-2 bg-slate-50 border-gray-200 focus:border-blue-500 focus:outline-none w-12 text-center ml-2" placeholder="MM"> <span class="text-sm text-gray-500">月</span>
+                    <input id="day" type="text" class="text-sm p-1 border-b-2 bg-slate-50 border-gray-200 focus:border-blue-500 focus:outline-none w-12 text-center ml-2" placeholder="DD"> <span class="text-sm text-gray-500">日</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Visual Diagram Section -->
+        <section class="py-4">
+            <div class="flex items-center justify-center space-x-4">
+                <!-- Will Card -->
+                <div class="flex flex-col items-center text-center w-1/4">
+                    <div class="p-3 bg-blue-100 rounded-full border-2 border-blue-200">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-blue-800 mt-2">Will (価値観)</h3>
+                    <p class="text-xs text-gray-500">パフォーマンスの源泉</p>
+                </div>
+
+                <div class="text-3xl font-light text-gray-400">+</div>
+
+                <!-- Can Card -->
+                <div class="flex flex-col items-center text-center w-1/4">
+                    <div class="p-3 bg-green-100 rounded-full border-2 border-green-200">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-green-800 mt-2">Can (経験プロセス)</h3>
+                    <p class="text-xs text-gray-500">課題解決の再現性</p>
+                </div>
+
+                <div class="text-3xl font-light text-gray-400">=</div>
+
+                <!-- Asset Card -->
+                <div class="flex flex-col items-center text-center w-1/4">
+                    <div class="p-3 bg-indigo-100 rounded-full border-2 border-indigo-200">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-indigo-800 mt-2">あなたのアセット</h3>
+                    <p class="text-xs text-gray-500">独自の提供価値の核</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="flex-grow mt-2 border-t pt-4">
+            
+            <!-- Personal Work Section -->
+            <div class="space-y-6">
+                <!-- Will Section -->
+                <div class="bg-blue-50/50 border border-blue-200 p-4 rounded-lg">
+                    <div class="flex items-center">
+                        <svg class="w-8 h-8 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        <h2 class="text-lg font-bold text-blue-800">Will (価値観・動機) の源泉</h2>
+                    </div>
+                    <div class="space-y-3 mt-3 text-sm grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div>
+                            <label class="font-semibold text-gray-700">Q1. 心が震えた瞬間 (なぜ？)</label>
+                            <textarea id="q1" class="w-full mt-1 p-2 rounded-md h-32" placeholder="最高の達成感や喜びを感じた瞬間とその理由を書き出してください。"></textarea>
+                        </div>
+                        <div>
+                            <label class="font-semibold text-gray-700">Q2. 譲れないこだわり (流儀)</label>
+                            <textarea id="q2" class="w-full mt-1 p-2 rounded-md h-32" placeholder="競技において、絶対に譲れなかった行動指針やスタンスは何ですか？"></textarea>
+                        </div>
+                        <div>
+                            <label class="font-semibold text-gray-700">Q3. 許容できなかったこと (なぜ？)</label>
+                            <textarea id="q3" class="w-full mt-1 p-2 rounded-md h-32" placeholder="強いストレスを感じた状況と、その根本的な理由を教えてください。"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Can Section -->
+                <div class="bg-green-50/50 border border-green-200 p-4 rounded-lg">
+                     <div class="flex items-center">
+                        <svg class="w-8 h-8 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <h2 class="text-lg font-bold text-green-800">Can (プロセス・経験) の言語化</h2>
+                    </div>
+                     <div class="mt-3 text-sm space-y-2">
+                        <p class="font-semibold text-gray-700">Q4. 最大の逆境と、その克服プロセス</p>
+                        <textarea id="q4" class="w-full p-2 rounded-md h-36" placeholder="直面した最大の逆境（スランプ、怪我など）を一つ選び、それをどう乗り越えたか、以下の観点で具体的に分解してください。&#10;①課題の特定 → ②分析と仮説 → ③実行と検証 → ④結果"></textarea>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        
+    </div>
+    
+    <div class="no-print mt-4 text-center">
+        <button onclick="sendEmail()" class="bg-green-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-green-700 transition-colors">
+            Gmailで送信する
+        </button>
+        <p class="text-xs text-gray-500 mt-2">※クリックすると、入力内容が記載されたGmailの作成画面が新しいタブで開きます。</p>
+    </div>
+
+    <script>
+        function sendEmail() {
+            // Get values from the form
+            const name = document.getElementById('name').value;
+            const year = document.getElementById('year').value;
+            const month = document.getElementById('month').value;
+            const day = document.getElementById('day').value;
+            const date = `${year}年${month}月${day}日`;
+
+            const q1 = document.getElementById('q1').value;
+            const q2 = document.getElementById('q2').value;
+            const q3 = document.getElementById('q3').value;
+            const q4 = document.getElementById('q4').value;
+
+            // Construct the email body
+            let body = `キャリア戦略ワークシート Step 1: アセットの再定義\n\n`;
+            body += `--------------------------------------------------\n`;
+            body += `氏名: ${name}\n`;
+            body += `記入日: ${date}\n`;
+            body += `--------------------------------------------------\n\n`;
+            body += `■ Will (価値観・動機) の源泉\n\n`;
+            body += `Q1. 心が震えた瞬間 (なぜ？):\n${q1}\n\n`;
+            body += `Q2. 譲れないこだわり (流儀):\n${q2}\n\n`;
+            body += `Q3. 許容できなかったこと (なぜ？):\n${q3}\n\n`;
+            body += `■ Can (プロセス・経験) の言語化\n\n`;
+            body += `Q4. 最大の逆境と、その克服プロセス:\n${q4}\n\n`;
+
+            // Construct the Gmail compose URL
+            const recipient = 'sumida@sports-life-lab.jp';
+            const subject = `【提出】キャリア戦略ワークシート Step1 - ${name}`;
+            
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipient)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            // Open Gmail in a new tab
+            window.open(gmailUrl, '_blank');
+        }
+    </script>
+
+</body>
+</html>
+
